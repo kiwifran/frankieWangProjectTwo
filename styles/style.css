@@ -189,28 +189,40 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   line-height: 32px;
   letter-spacing: 2px; }
 
-.formPH, input, input::-webkit-input-placeholder, textarea, textarea::-webkit-input-placeholder {
+.formPH, input,
+input::-webkit-input-placeholder,
+textarea,
+textarea::-webkit-input-placeholder {
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 32px;
   letter-spacing: 2px; }
 
-.formPH, input, input:-ms-input-placeholder, textarea, textarea:-ms-input-placeholder {
+.formPH, input,
+input:-ms-input-placeholder,
+textarea,
+textarea:-ms-input-placeholder {
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 32px;
   letter-spacing: 2px; }
 
-.formPH, input, input::-ms-input-placeholder, textarea, textarea::-ms-input-placeholder {
+.formPH, input,
+input::-ms-input-placeholder,
+textarea,
+textarea::-ms-input-placeholder {
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 32px;
   letter-spacing: 2px; }
 
-.formPH, input, input::placeholder, textarea, textarea::placeholder {
+.formPH, input,
+input::placeholder,
+textarea,
+textarea::placeholder {
   font-family: "Lato", sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -319,22 +331,34 @@ input {
   border-bottom: 2px solid #ffc600;
   padding-bottom: 1rem; }
 
-input, input::-webkit-input-placeholder, textarea, textarea::-webkit-input-placeholder {
+input,
+input::-webkit-input-placeholder,
+textarea,
+textarea::-webkit-input-placeholder {
   padding-left: 1.4rem;
   opacity: 1;
   color: #fafffe; }
 
-input, input:-ms-input-placeholder, textarea, textarea:-ms-input-placeholder {
+input,
+input:-ms-input-placeholder,
+textarea,
+textarea:-ms-input-placeholder {
   padding-left: 1.4rem;
   opacity: 1;
   color: #fafffe; }
 
-input, input::-ms-input-placeholder, textarea, textarea::-ms-input-placeholder {
+input,
+input::-ms-input-placeholder,
+textarea,
+textarea::-ms-input-placeholder {
   padding-left: 1.4rem;
   opacity: 1;
   color: #fafffe; }
 
-input, input::placeholder, textarea, textarea::placeholder {
+input,
+input::placeholder,
+textarea,
+textarea::placeholder {
   padding-left: 1.4rem;
   opacity: 1;
   color: #fafffe; }

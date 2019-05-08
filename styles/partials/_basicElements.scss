@@ -77,7 +77,10 @@ input {
     border-bottom:2px solid $marigold;
     padding-bottom: 1rem;
 }
-input, input::placeholder, textarea, textarea::placeholder {
+input, 
+input::placeholder, 
+textarea, 
+textarea::placeholder {
     padding-left: 1.4rem;
     @extend .formPH;
     opacity: 1;
