@@ -108,7 +108,10 @@
     width: 100%;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    input, input::placeholder, textarea, textarea::placeholder {
+    input, 
+    input::placeholder, 
+    textarea, 
+    textarea::placeholder {
         background: $camogreen;
     }
 }
@@ -149,10 +152,10 @@
         text-decoration: none;
         color:$iceblue;
         transition: color 1s;
-        &:hover {
-        color: $marigold;
-        }
     }
+}
+.lists a:hover {
+    color: $marigold;
 }
 .mission ul {
     padding-left: 0;
@@ -162,6 +165,7 @@
 .bullets li {
     position: relative;
 }
+//have to select it in such way since the scss processor has  a bug, if write the selector like .bullets li the processor will add the pseudo element the .mission list items as well.
 .bullets ul li::before {
     content:"•";
     position: absolute;
@@ -436,7 +440,10 @@
         width:100%;
     }
     .addComment {
-        input, input::placeholder, textarea, textarea::placeholder {
+        input, 
+        input::placeholder, 
+        textarea, 
+        textarea::placeholder {
         padding-left: 0.5rem;
         }
         textarea {

@@ -38,7 +38,10 @@
     position: relative;
     box-shadow: 1.3rem 1.5rem $marigold;
     background: $charcoal;
-    input, input::placeholder, textarea, textarea::placeholder {
+    input, 
+    input::placeholder, 
+    textarea, 
+    textarea::placeholder {
         background: $charcoal;
     }
 }
@@ -74,6 +77,11 @@
 // main ends
 
 // media queries begins
+@media (max-width:1581px) {
+    .contactInfo {
+        letter-spacing: 0.06rem;
+    }
+}
 @media (max-width:1530px) {
     .contactHeading {
         top:35%;
@@ -88,6 +96,10 @@
     }
     .contactForm {
         padding:3.5rem 2rem 2rem;
+    }
+    .contactInfo {
+        width:20.5%;
+        letter-spacing: 0.04rem;
     }
     
 }
@@ -224,7 +236,10 @@
     }
     .contactForm {
         box-shadow: none;
-        input, input::placeholder, textarea, textarea::placeholder {
+        input, 
+        input::placeholder, 
+        textarea, 
+        textarea::placeholder {
             padding-left: 0.6rem;
         }
         textarea {

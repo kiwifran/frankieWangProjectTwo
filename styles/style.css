@@ -1047,13 +1047,25 @@ button {
   width: 100%;
   padding-top: 2rem;
   padding-bottom: 2rem; }
-  .addComment input, .addComment input::-webkit-input-placeholder, .addComment textarea, .addComment textarea::-webkit-input-placeholder {
+  .addComment input,
+  .addComment input::-webkit-input-placeholder,
+  .addComment textarea,
+  .addComment textarea::-webkit-input-placeholder {
     background: #1e140e; }
-  .addComment input, .addComment input:-ms-input-placeholder, .addComment textarea, .addComment textarea:-ms-input-placeholder {
+  .addComment input,
+  .addComment input:-ms-input-placeholder,
+  .addComment textarea,
+  .addComment textarea:-ms-input-placeholder {
     background: #1e140e; }
-  .addComment input, .addComment input::-ms-input-placeholder, .addComment textarea, .addComment textarea::-ms-input-placeholder {
+  .addComment input,
+  .addComment input::-ms-input-placeholder,
+  .addComment textarea,
+  .addComment textarea::-ms-input-placeholder {
     background: #1e140e; }
-  .addComment input, .addComment input::placeholder, .addComment textarea, .addComment textarea::placeholder {
+  .addComment input,
+  .addComment input::placeholder,
+  .addComment textarea,
+  .addComment textarea::placeholder {
     background: #1e140e; }
 
 .addcomment input,
@@ -1091,8 +1103,9 @@ button {
     -webkit-transition: color 1s;
     -o-transition: color 1s;
     transition: color 1s; }
-    .lists ul a:hover {
-      color: #ffc600; }
+
+.lists a:hover {
+  color: #ffc600; }
 
 .mission ul {
   padding-left: 0;
@@ -1314,13 +1327,25 @@ button {
     letter-spacing: 0.05rem; }
   .blogImg {
     width: 100%; }
-  .addComment input, .addComment input::-webkit-input-placeholder, .addComment textarea, .addComment textarea::-webkit-input-placeholder {
+  .addComment input,
+  .addComment input::-webkit-input-placeholder,
+  .addComment textarea,
+  .addComment textarea::-webkit-input-placeholder {
     padding-left: 0.5rem; }
-  .addComment input, .addComment input:-ms-input-placeholder, .addComment textarea, .addComment textarea:-ms-input-placeholder {
+  .addComment input,
+  .addComment input:-ms-input-placeholder,
+  .addComment textarea,
+  .addComment textarea:-ms-input-placeholder {
     padding-left: 0.5rem; }
-  .addComment input, .addComment input::-ms-input-placeholder, .addComment textarea, .addComment textarea::-ms-input-placeholder {
+  .addComment input,
+  .addComment input::-ms-input-placeholder,
+  .addComment textarea,
+  .addComment textarea::-ms-input-placeholder {
     padding-left: 0.5rem; }
-  .addComment input, .addComment input::placeholder, .addComment textarea, .addComment textarea::placeholder {
+  .addComment input,
+  .addComment input::placeholder,
+  .addComment textarea,
+  .addComment textarea::placeholder {
     padding-left: 0.5rem; }
   .addComment textarea {
     padding-top: 0.8rem; }
@@ -1389,13 +1414,25 @@ button {
   -webkit-box-shadow: 1.3rem 1.5rem #ffc600;
   box-shadow: 1.3rem 1.5rem #ffc600;
   background: #262725; }
-  .contactForm input, .contactForm input::-webkit-input-placeholder, .contactForm textarea, .contactForm textarea::-webkit-input-placeholder {
+  .contactForm input,
+  .contactForm input::-webkit-input-placeholder,
+  .contactForm textarea,
+  .contactForm textarea::-webkit-input-placeholder {
     background: #262725; }
-  .contactForm input, .contactForm input:-ms-input-placeholder, .contactForm textarea, .contactForm textarea:-ms-input-placeholder {
+  .contactForm input,
+  .contactForm input:-ms-input-placeholder,
+  .contactForm textarea,
+  .contactForm textarea:-ms-input-placeholder {
     background: #262725; }
-  .contactForm input, .contactForm input::-ms-input-placeholder, .contactForm textarea, .contactForm textarea::-ms-input-placeholder {
+  .contactForm input,
+  .contactForm input::-ms-input-placeholder,
+  .contactForm textarea,
+  .contactForm textarea::-ms-input-placeholder {
     background: #262725; }
-  .contactForm input, .contactForm input::placeholder, .contactForm textarea, .contactForm textarea::placeholder {
+  .contactForm input,
+  .contactForm input::placeholder,
+  .contactForm textarea,
+  .contactForm textarea::placeholder {
     background: #262725; }
 
 .contactForm input,
@@ -1425,6 +1462,10 @@ button {
   margin-top: 1.6rem;
   margin-bottom: 1.6rem; }
 
+@media (max-width: 1581px) {
+  .contactInfo {
+    letter-spacing: 0.06rem; } }
+
 @media (max-width: 1530px) {
   .contactHeading {
     top: 35%; }
@@ -1435,7 +1476,10 @@ button {
     top: -28%;
     left: 6%; }
   .contactForm {
-    padding: 3.5rem 2rem 2rem; } }
+    padding: 3.5rem 2rem 2rem; }
+  .contactInfo {
+    width: 20.5%;
+    letter-spacing: 0.04rem; } }
 
 @media (max-width: 1428px) {
   .contactHeading {
@@ -1547,13 +1591,25 @@ button {
   .contactForm {
     -webkit-box-shadow: none;
     box-shadow: none; }
-    .contactForm input, .contactForm input::-webkit-input-placeholder, .contactForm textarea, .contactForm textarea::-webkit-input-placeholder {
+    .contactForm input,
+    .contactForm input::-webkit-input-placeholder,
+    .contactForm textarea,
+    .contactForm textarea::-webkit-input-placeholder {
       padding-left: 0.6rem; }
-    .contactForm input, .contactForm input:-ms-input-placeholder, .contactForm textarea, .contactForm textarea:-ms-input-placeholder {
+    .contactForm input,
+    .contactForm input:-ms-input-placeholder,
+    .contactForm textarea,
+    .contactForm textarea:-ms-input-placeholder {
       padding-left: 0.6rem; }
-    .contactForm input, .contactForm input::-ms-input-placeholder, .contactForm textarea, .contactForm textarea::-ms-input-placeholder {
+    .contactForm input,
+    .contactForm input::-ms-input-placeholder,
+    .contactForm textarea,
+    .contactForm textarea::-ms-input-placeholder {
       padding-left: 0.6rem; }
-    .contactForm input, .contactForm input::placeholder, .contactForm textarea, .contactForm textarea::placeholder {
+    .contactForm input,
+    .contactForm input::placeholder,
+    .contactForm textarea,
+    .contactForm textarea::placeholder {
       padding-left: 0.6rem; }
     .contactForm textarea {
       padding-top: 1rem; }
