@@ -1,0 +1,259 @@
+// header starts
+.contactHeader {
+    @include header(36vw, "../assets/contactHeader.jpg");
+    max-height: 576px;
+}
+.contactHeader .links:last-child{
+    color:$marigold;
+}
+.contactHeading {
+    @extend .heading2;
+    width:50%;
+    position: absolute;
+    left: 7.5rem;
+    top:40%;
+    color:$marigold;
+}
+// header ends
+// main starts
+.contactMain {
+    height: 36.5vw;
+    max-height: 583.92px;
+    position: relative;   
+    background: $camogreen;
+    .flexWrapper {
+        justify-content: space-between;
+    }
+    &>.flexWrapper {
+        width:calc(100% - 12rem);
+        position: absolute;
+        top:-27.5%;
+        left:5%;
+    }
+}
+// the left contact form starts
+.contactForm {
+    width:71.5%;
+    padding:4.1rem 3rem 2.6rem;
+    position: relative;
+    box-shadow: 1.3rem 1.5rem $marigold;
+    background: $charcoal;
+    input, input::placeholder, textarea, textarea::placeholder {
+        background: $charcoal;
+    }
+}
+.contactForm input,
+.contactForm textarea {
+    margin-bottom: 2.8rem;
+}
+// the left form ends
+//the right contact information starts
+.contactInfo {
+    width:19%;
+    margin-top:13.2rem;;
+    color:$iceblue;
+    letter-spacing: 0.1rem;
+    line-height: 1rem;
+    .flexWrapper {
+        width: 75%;
+    }
+    a {
+        width: 25%;
+        color:$marigold;
+        transition: all 0.5s;
+        &:hover {
+            transform: scale(2);
+        }
+    }
+}
+.ourEmail {
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+}
+// contact information ends
+// main ends
+
+// media queries begins
+@media (max-width:1530px) {
+    .contactHeading {
+        top:35%;
+    }
+    .contactMain {
+        height: 38.5vw;
+        max-height: initial;
+    }
+    .contactMain>.flexWrapper{
+        top:-28%;
+        left: 6%;
+    }
+    .contactForm {
+        padding:3.5rem 2rem 2rem;
+    }
+    
+}
+@media (max-width:1428px) {
+    .contactHeading {
+        width: 60%;
+    }
+}
+@media (max-width: 1390px) {
+    .contactHeading {
+        top:37%;
+        font-size: 90px;
+        line-height: 57px;
+        letter-spacing: 8px;
+    }
+    .contactMain>.flexWrapper {
+        width: calc(100% - 7rem);
+        left:10%;
+    }
+    .contactForm {
+        padding:3rem 1.8rem 1.8rem;
+        box-shadow: 1rem 1.2rem $marigold;
+    }
+    .contactInfo {
+    width:23%;
+    margin-top:10rem;
+    line-height: 0.6rem;
+    }
+}
+@media (max-width:1366px) {
+    .contactMain>.flexWrapper {
+        width: calc(100% - 6rem);
+        left:5%;
+    }
+    .contactForm {
+        box-shadow: 0.8rem 0.8rem $marigold;
+    }
+    .contactForm input,
+    .contactForm textarea {
+        margin-bottom: 1.5rem;
+    }
+}
+@media (max-width:1242px) {
+    .contactMain {
+        height: 65vw;
+    }
+    .contactHeading {
+        top:30%;
+        left:27%;
+        letter-spacing: 5px;
+    }
+    .contactMain {
+        max-height: initial;
+    }
+    .contactMain>.flexWrapper {
+        top: -16%;
+        justify-content: space-around;
+        flex-wrap: wrap;       
+    }
+    .contactForm {
+        width: 100%;
+    }
+    .contactInfo {
+        width: 45%;
+        margin-top: 3rem;
+        text-align: center;
+        .flexWrapper {
+            width: 100%;
+        }
+    }
+}
+@media (max-width:1180px){
+    .contactMain {
+        height: 790px;
+    }
+}
+@media (max-width:1010px){
+    .contactHeading,
+    .contactMain>.flexWrapper {
+        position: static;
+    }
+    .contactHeading {
+        width: 80%;
+        margin:6rem auto;
+        text-align: center;
+        font-size: 85px;
+    }
+    .contactMain {
+        height: auto;
+        padding-bottom: 2rem;
+    }
+    .contactMain>.flexWrapper {
+        width: 100%;
+        padding:2rem 5rem;
+    }
+}
+@media (max-width:938px) {
+    .contactHeader {
+        height: 300px;
+        background-position: 31% center;
+    }
+    .contactHeading {
+        width:90%;
+        font-size: 80px;
+    }
+    .contactForm {
+        padding: 1.5rem 1rem;
+        box-shadow: 0.5rem 0.5rem $marigold;
+    }
+    .contactForm input,
+    .contactForm textarea {
+        margin-bottom: 1.1rem;
+    }
+}
+@media (max-width:788px) {
+    .contactHeading {
+        font-size: 75px;
+    }
+    .contactMain>.flexWrapper {
+        padding: 1.5rem 2rem;
+    }
+    .contactInfo {
+        width: 80%;
+    }
+}
+@media (max-width:620px) {
+    .contactHeading {
+        font-size: 69px;
+    }
+}
+@media (max-width:588px) {
+    .contactHeading {
+        letter-spacing: 1px;
+    }
+    .contactForm {
+        box-shadow: none;
+        input, input::placeholder, textarea, textarea::placeholder {
+            padding-left: 0.6rem;
+        }
+        textarea {
+            padding-top: 1rem;
+        }
+        .flexWrapper {
+            flex-wrap: wrap;
+        }
+        input {
+            width:100%;
+        }
+    }
+    .contactInfo {
+        line-height: 1rem;
+    }
+    .contactInfo a {
+        font-size: 1.8rem;
+    }   
+}
+@media (max-width:455px) {
+    .contactHeading {
+        font-size: 81px;
+    }
+    .contactMain>.flexWrapper {
+        padding:0;
+    }
+}
+@media (max-width:360px) {
+    .contactInfo {
+        font-size: 0.9rem;
+    }
+}

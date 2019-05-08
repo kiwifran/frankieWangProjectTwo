@@ -1,0 +1,477 @@
+// header starts
+.blogHeader {
+    @include header(36vw, "../assets/blogHeader.jpg");
+    max-height: 576px;
+}
+.blogHeader .links:nth-child(3) {
+    color:$marigold;
+}
+.blogHeading {
+    @extend .heading2;
+    width:20%;
+    position: absolute;
+    left: 7.5rem;
+    top:45%;
+    color:$marigold;
+}
+// header ends
+//main parts start
+
+//left blog post comments and form
+//blog post
+.blogMain {
+    height:2820px;
+    position: relative;
+    background:$camogreen;
+    color:$iceblue;
+}
+.blogMain>.flexWrapper {
+    position: absolute;
+    top:-7.5rem;
+    justify-content: space-between;
+}
+.blogWrapper {
+    width:65%;
+    padding-bottom: 4%;
+}
+.blogText,
+.commentWrapper {
+    padding-left: 8rem;
+}
+.blogText,
+.comment {
+    padding-right: 3.1rem;
+}
+.blogImg{
+    width: 100%;
+    padding-right: 1rem;
+    img {
+        box-shadow: 1rem 1rem $mudgreen;
+    }
+}
+.blogPost h2 {
+    margin: 0;
+    @extend .heading3;
+    color:$marigold;
+}
+.blogText {
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-right:5px solid $mudgreen;
+    border-bottom:5px solid $mudgreen;
+    span {
+        font-weight: 700;
+    }
+}
+.blogText .date {
+    margin-top: 0.3rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+.blogText .content,
+.comment .content {
+    line-height: 1.7rem;
+    letter-spacing: 0.12rem;
+}
+.blogText .content {
+    padding-bottom: 1rem;    
+}
+//comments
+.commentWrapper h2 {
+    @extend .heading3;    
+}
+.commentWrapper .flexWrapper {
+    justify-content: space-between;
+}
+.commentWrapper>.flexWrapper {
+    margin-bottom: 3.5rem;
+}
+.avatar {
+    width: 11.5%;
+}
+.comment {
+    width:84%;
+    .date {
+        margin-top: 0.2rem;
+        margin-bottom: 0.7rem;
+        letter-spacing: 0.1rem;
+        color:$marigold;
+        font-weight:700;
+        line-height: 1rem;
+    }
+    .content {
+        margin-top: 0.3rem;
+    }
+}
+//add comment form
+.addComment {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    input, input::placeholder, textarea, textarea::placeholder {
+        background: $camogreen;
+    }
+}
+.addcomment input,
+.addcomment textarea {
+    margin-bottom: 2rem;
+}
+// left blog part ends
+//right other information part starts
+.otherInfoWrapper {
+    margin-top: 14rem;
+    padding-left: 1rem;
+    width:25%;
+    height: 45rem;
+    .image{
+        width:100%;
+        padding-left: 1rem;
+        img {
+            box-shadow: -1rem 1rem $mudgreen;
+        }
+    }
+    .lists {
+        margin-top: -1rem;
+        padding:2rem 1rem 1.5rem;
+        background-color: $mudgreen;
+    }
+}
+.lists h3 {
+    margin-bottom:0.5rem; 
+    font-family: $dokdo;
+    font-size: 1.9rem;
+    letter-spacing: 0.07rem;
+    line-height: 1rem;
+}
+.lists ul {
+    list-style-type: none;
+    a {
+        text-decoration: none;
+        color:$iceblue;
+        transition: color 1s;
+        &:hover {
+        color: $marigold;
+        }
+    }
+}
+.mission ul {
+    padding-left: 0;
+    padding-bottom: 0.7rem;
+    @extend .bullets;
+}
+.bullets li {
+    position: relative;
+}
+.bullets ul li::before {
+    content:"•";
+    position: absolute;
+    left:-1.5rem;
+    vertical-align: middle;
+    font-size: 1.4rem;
+    color:$marigold;
+}
+//right part ends
+//responsive begins 
+@media (max-width:1530px) {
+    .blogHeading {
+        top:35%;
+    }
+    .blogMain {
+        height: 2890px;
+    }
+    .blogMain>.flexWrapper {
+        top: -5.5rem;
+    }
+}
+@media (max-width:1428px) {
+    .blogHeading {
+        width: 60%;
+    }
+    .blogWrapper {
+        width:70%;
+    }
+}
+@media (max-width:1390px) {
+    .blogHeading {
+        top:40%;
+        font-size: 95px;
+        line-height: 60px;
+        letter-spacing: 8px;       
+    }
+    .blogMain {
+        height: 2920px;
+    }
+    .avatar {
+        width:20%;
+    }
+    .comment {
+        width: 75%;
+    }
+}
+@media (max-width:1366px) {
+    .blogWrapper {
+        width:73%;
+    }
+    .blogText,
+    .commentWrapper {
+        padding-left: 5rem;
+    }
+    .addComment input,
+    .addComment textarea {
+        margin-bottom: 1.5rem;
+    }
+}
+@media (max-width:1242px) {
+    .blogHeading {
+        left: 35%;
+        letter-spacing: 5px;
+    }
+    .blogImg {
+        padding-right: 0.5rem;
+        img {
+            box-shadow: 0.5rem 0.5rem $mudgreen;
+        }
+    }
+    .otherInfoWrapper .image {
+        padding-left: 0.4rem;
+        img {
+            box-shadow: -0.4rem 0.4rem $mudgreen;
+        }
+    }
+}
+@media (max-width:1180px) {
+    .blogMain {
+        height:3050px;
+    }
+    .blogMain>.flexWrapper {
+        top:-3.5rem;
+    }
+    .avatar {
+        width:30%;
+    }
+    .comment {
+        width: 65%;
+    }
+    .blogText,
+    .comment {
+        padding-right: 2rem;
+    }
+    .otherInfoWrapper {
+        width:27%;
+    }
+    .lists h3 {
+        letter-spacing: 0.05rem;
+        line-height: 1.6rem;
+    }
+} 
+@media (max-width:1080px) {
+    .blogHeading,
+    .blogMain>.flexWrapper {
+        position: static;
+    }
+    .blogHeading {
+        width: 80%;
+        margin: 7rem auto;
+        text-align: center;
+        font-size: 100px;
+    }
+    .blogMain {
+        height:auto;
+    }
+    .blogMain>.flexWrapper {
+        padding: 3rem 0 1rem;
+    }
+    .blogText,
+    .commentWrapper {
+        padding-left: 1rem;
+    }
+    .mission {
+        margin-bottom: 2rem;
+    }
+    .bullets ul {
+        padding-left: 0;
+    }
+    .bullets ul li::before {
+        content:"";
+    }
+}
+@media (max-width:938px) {
+    .blogHeader {
+        height: 300px;
+        background-position: center center;
+    }
+    .blogMain>.flexWrapper {
+        flex-wrap: wrap;
+        padding:3rem 1rem 1rem;
+    }
+    .blogWrapper {
+        width: 100%;
+    }
+    .blogPost h2 {
+        margin: 1rem 0;
+    }
+    .blogText,
+    .commentWrapper {
+        padding:0 1rem 1rem;
+    }
+    .blogText {
+        border: 2px solid $mudgreen;
+        text-align: center;
+    }
+    .blogImg,
+    .otherInfoWrapper .image {
+        padding:0;
+        img {
+            box-shadow: none;
+        }
+    }
+    .blogImg {
+        width:80%;
+        margin:0 auto 1rem;
+    }
+    .avatar {
+        width:25%;
+    }
+    .comment {
+        width: 72%;
+        border-bottom: 2px solid $mudgreen;
+    }
+    .otherInfoWrapper,
+    .otherInfoWrapper .lists {
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .otherInfoWrapper {
+        margin-top: 1rem;
+        padding: 0;
+        justify-content: space-around;
+        .image {
+            width:30%;
+        }
+    }
+    .otherInfoWrapper .lists {
+        padding-bottom: 0;
+        justify-content: space-between;
+        text-align: center;
+        background-color: initial;
+    }
+    .lists li{
+        margin-bottom: 1rem; 
+    }
+    .mission,
+    .bullets {
+        border-top:2px solid $mudgreen;
+        margin-bottom: 0.5rem;
+    }
+    //the scss processor seems to have a bug:it will automatically add an .mission ul selector to the above selector, so I have to cancel the extra border manually as below.
+    .mission ul {
+        border:none;
+    }
+    .mission ul,
+    .bullets ul {
+        padding: 1rem 0 0;
+    }
+}
+@media (max-width:880px) {
+    .blogMain {
+        padding-bottom: 1rem;
+    }
+    .avatar {
+        width:39%;
+    }
+    .comment {
+        width:57%;
+    }
+}
+@media (max-width:788px) {
+    .commentWrapper .flexWrapper,
+    .comment,
+    .mission,
+    .bullets {
+        width:100%;
+    }
+    .commentWrapper .flexWrapper {
+        flex-wrap: wrap;
+    }
+    .avatar {
+        width:30%;
+        margin-bottom: 1rem;
+    }
+    .comment {
+        padding-right: 0;
+        border-top: 2px solid $mudgreen;
+        text-align: right;
+    }
+    .comment .date {
+        margin-top: 1rem;
+    }
+    .otherInfoWrapper {
+        margin:0.5rem 0;
+    }
+    .lists li{
+        margin-bottom: 0.3em; 
+    }
+}
+@media (max-width:630px) {
+    .blogMain>.flexWrapper {
+        padding-top: 1.5rem;
+    }
+    .addComment {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .addComment .flexWrapper,
+    .addcomment input,
+    .addcomment textarea {
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width:588px) {
+    .blogHeading,
+    .comment .date {
+        letter-spacing: 0.05rem;
+    }
+    .blogImg {
+        width:100%;
+    }
+    .addComment {
+        input, input::placeholder, textarea, textarea::placeholder {
+        padding-left: 0.5rem;
+        }
+        textarea {
+            padding-top: 0.8rem;
+        }
+        .flexWrapper {
+            flex-wrap: wrap;
+        }
+        input {
+            width:100%;
+        }
+    }
+    .otherInfoWrapper .image {
+        width:45%;
+    }
+}
+@media(max-width:455px) {
+    .blogHeader {
+        background-position: 60% center;
+    }
+    .blogHeading {
+        font-size: 100px;
+    }
+    .blogMain>.flexWrapper {
+        padding:0.7rem 0.5rem;
+    }
+    
+    .blogText .content,
+    .comment .content {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.06rem;
+    }
+    .otherInfoWrapper .lists {
+        margin-top: 0;
+        padding: 1rem 0 0;
+    }
+}

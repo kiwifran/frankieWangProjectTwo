@@ -1,0 +1,170 @@
+html {
+  /* initializng fonts */
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+}
+body {
+    margin: 0 auto; 
+    max-width: 1600px;
+}
+.middleAppear {
+    display: none;
+}
+.wrapper {   
+    padding: 0 8rem;
+}
+.flexWrapper {
+    padding:0;
+    margin:0;
+    display: flex;
+}
+img {
+    display: block;
+    width:100%;
+    max-width:100%;
+}
+// header
+@mixin header($height, $bgImgUrl) {
+    position: relative;
+    height: $height;
+    background-image: url($bgImgUrl);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+}
+nav {
+    position: relative;
+    width:100%;
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    padding-top: 0.5rem;
+    width:24%;
+    text-align: left;
+}
+.nav {
+    width: 36.5%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+a.links {
+    color:$iceblue;
+    text-decoration: none; 
+    &:hover {
+        transition: color 1s;
+        color:$marigold;
+    }
+}
+//form part
+textarea,
+button {
+    width:100%;
+}
+input,
+textarea {
+    margin-bottom: 2.8rem;
+}
+input,
+button {
+    border:none;
+}
+input {
+    width: 48%;
+    border-bottom:2px solid $marigold;
+    padding-bottom: 1rem;
+}
+input, input::placeholder, textarea, textarea::placeholder {
+    padding-left: 1.4rem;
+    @extend .formPH;
+    opacity: 1;
+    color:$iceblue;
+    
+}
+textarea {
+    border:2px solid $marigold;
+    padding-top: 2rem;
+}
+button {
+    padding:0.45rem;
+    background: $mudgreen;
+    font-family: $dokdo;
+    color:$iceblue;
+    font-size: 1.6rem;
+    transition: all 0.4s;
+    &:hover {
+        padding:0.35rem;
+        border:1px solid $marigold;        
+        font-size: 1.8rem;
+        color:$marigold;
+    }
+}
+// footer
+.copyright {
+    width:100%;
+    padding:0.5rem 0;
+    background: $charcoal;
+    color:$iceblue;
+    text-align: center;
+    font-family: $lato;
+    font-weight: 400;
+    font-size:0.9rem;
+    letter-spacing: 0.05rem;
+}
+//responsiveness begins 
+@media (max-width:1530px) {
+    .nav {
+        width:42%;
+    }
+}
+@media (max-width:1366px) {
+    .wrapper {
+        padding:0 5rem;
+    }
+    .nav {
+        width:45%;
+    }
+}
+@media (max-width:1010px) {
+    .middleHidden {
+        display: none;
+    }
+    .middleAppear {
+        display: block;
+    }
+    i.fa-bars {
+        position: absolute;
+        right:0;
+        top: 1.2rem;
+        font-size: 2rem;
+        color: $marigold;
+    }
+}
+@media (max-width:788px) {
+    .wrapper{
+        padding: 0 2rem;
+    }
+    .copyright {
+        letter-spacing: 0.03rem;
+    }
+}
+@media (max-width:588px) {
+    .logo {
+        padding-top: 0.9rem;
+    }
+}
+@media (max-width:450px) {
+    .wrapper {
+        padding: 0 1rem;
+    }
+    i.fa-bars {
+        top:0.55rem;
+        font-size: 1.7rem;
+    }
+    .logo {
+        padding-top: 0.2rem;
+    }
+}

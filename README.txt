@@ -1,0 +1,2 @@
+I followed the desktop layout for screen width 1600px, which is also the largest width I set for my pages. Then I made several breakpoints to modify the design as the screen width goes downwards. 320px is the smallest screen width that my pages adapt to.
+Thank you for reviewing my project!

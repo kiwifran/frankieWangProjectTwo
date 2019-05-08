@@ -1,0 +1,598 @@
+// header starts
+.homeHeader {
+    @include header(47.2vw, "../assets/homeHeader.jpg");
+    max-height: 755.2px;
+}
+.homeHeader .links:first-child {
+    color:$marigold;
+}
+.headingWrapper {
+    width: 100%;
+    margin-top:7.9rem;
+    position: absolute;
+    left:0;
+    display:flex;
+    justify-content: start;
+}
+.headingWrapper figure {
+    width: 43%;
+}
+.headings {
+    padding-left: 2rem;
+    width: 40%;
+}
+.plainTitle {
+    margin-bottom: 0;
+    padding-left: 0.6rem;
+    color:$iceblue;
+    font-family: $lato;
+    font-weight: 400;
+    line-height: 2.1rem;
+    letter-spacing: 0.2rem;
+}
+.headings .title {
+    @extend .heading1;
+    display: inline-block;
+    margin-top: -1rem;
+}
+// header ends
+// main section starts
+//new adventure part starts
+.newAdv {
+    padding-top:10.5rem;
+    padding-bottom: 5rem;
+    background: $camogreen;
+}
+.newAdv .flexWrapper, 
+.gallery .flexWrapper {
+    justify-content: space-between;
+}
+.text h2 {
+    @extend .heading3;
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    color: $marigold;
+}
+.text p {
+    margin-top: 0.3rem;
+    line-height: 1.7rem;
+    color:$iceblue;
+    letter-spacing: 1.9px;
+}
+.text a {
+    padding: 0.5rem;
+    background: $mudgreen;
+    font-family: $dokdo;
+    font-size:1.5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: $iceblue;
+    transition: all 0.4s;
+    &:hover {
+        padding:0.1rem 0.5rem;
+        border:2px solid $marigold;
+        font-size:1.6rem; 
+        color:$marigold;
+    }
+}
+.newAdv .text {
+    width:63%;
+}
+.newAdv p {
+    margin-bottom: 1.2rem;
+}
+.newAdv .image {
+    width: 25%;
+}
+.newAdv img {
+    box-shadow: -0.8rem 0.8em $mudgreen;
+}
+//gallery starts
+.gallery {
+    padding-top:3.6rem;
+    padding-bottom: 4rem;
+    background: $charcoal;
+}
+.gallery .image {
+    width:31.5%;
+}
+//user service part starts
+.userService {
+    padding-top:5rem;
+    padding-bottom: 6rem;
+    background: $camogreen;
+}
+.userService .flexWrapper,
+.userService .icon {
+    justify-content: space-between;
+}
+.userService .flexWrapper {
+    flex-wrap: wrap;
+}
+.userService .icon {
+    width:49%;
+    padding:0;
+    margin-bottom: 2rem;
+    display: flex;
+}
+.userService .iconCircle {
+    width: 70px;
+    height: 70px;
+    padding: 0.65rem 0.3rem;
+    border-radius: 50%;
+    background: $mudgreen;
+    color:$iceblue;
+    font-size: 1.65rem;
+    text-align: center;
+    vertical-align: middle;
+    transition: transform 1s ease-out, color 0.5s;
+    &:hover {
+        transform: scale(2) rotate(360deg);
+        color:$marigold;
+    }
+}
+.userService .text {
+    width: calc(100% - 70px - 1.5rem);
+}
+.userService h3 {
+    margin-top: 0.1rem;
+    margin-bottom: 0;
+    @extend .iconHeading;
+    color:$marigold;
+}
+// about part begins 
+.about {
+    height: 51vw;
+    max-height: 816px;
+    position: relative;
+    background:$charcoal;
+}
+.about .flexWrapper {
+    justify-content: space-between;
+    position: absolute;
+    width: calc(100% - 8rem);
+}
+.about .flexWrapper:first-child {
+    top:-7%;
+    left:0;
+}
+.about .flexWrapper:last-child {
+    bottom:-7%;
+    right: 0;
+}
+.about .text {
+    width:calc(53% - 12.5rem);
+}
+.about p {
+    margin-bottom: 1.8rem;
+    margin-right: 3rem;
+}
+.aboutImage {
+    width:47%;
+}
+.aboutText1 {
+    margin-top: 9%;
+}
+.aboutText2 {
+    margin-top: 1%;
+    text-align: right;
+}
+.aboutText2 p{
+    text-align: left;
+}
+.aIRight {
+    order:1;
+}
+.aILeft img {
+    box-shadow: 1.3rem 1.3rem $marigold;
+}
+.aIRight img {
+    box-shadow: -1.3rem 1.3rem $marigold;
+}
+//free trial starts
+.freeTrial {
+    background: $camogreen;
+}
+.freeTrial figure{
+    width: 100%;
+}
+.freeTrial .text {
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+    text-align: center;
+}
+.freeTrial p {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+//main content ends
+//media quereis start 
+@media (max-width:1580px) {
+    .headingWrapper {
+        margin-top: 7rem;
+    }
+    .newAdv .text {
+        width:59%;
+    }
+    .newAdv .image {
+        width:30%;
+    }
+    .aboutText1 {
+        margin-top: 8%;
+    }
+}
+@media (max-width:1530px) {
+    .headings .title {
+        margin-top: 0;
+        line-height: 4rem;
+    }
+    .about p {
+        margin-bottom: 1.25rem;
+    }
+    
+}
+@media (max-width:1490px) {
+    .headingWrapper {
+        margin-top: 5rem;
+    }
+    .headings {
+        margin-top: 0.8rem;
+    }
+    .newAdv {
+        padding-top: 8rem;
+    }
+    .newAdv .text {
+        width:60%;
+    }
+    .newAdv .image {
+        width:34%;
+    }
+    .about .flexWrapper:first-child {
+        top:-5%;
+        left:0;
+    }
+    .about p {
+        margin-right: 0;
+    }
+    .aboutText1 {
+        margin-top: 7%;
+    }
+    .about .flexWrapper:last-child {
+        bottom:-6%;
+        right: 0;
+    }
+}
+@media (max-width:1428px) {
+    .headings .title {
+        font-size: 105px;
+    }
+    .about  {
+        height: 57vw;
+    }
+    .about .flexWrapper:first-child {
+        top:-2.2%;
+        }
+    .about .flexWrapper:last-child {
+        bottom:-2.2%;
+    }
+    .aILeft img {
+        box-shadow: 1rem 1rem $marigold;
+    }
+    .aIRight img {
+        box-shadow: -1rem 1rem $marigold;
+    }
+    .aboutText1 {
+        margin-top: 5%;
+    }
+    .newadv .text {
+        width:56%;
+    }
+    .newAdv p {
+        margin-bottom: 1rem;
+    }
+    .newAdv .image {
+        width:36.5%;
+    }
+}
+@media (max-width:1390px) {
+    .about  {
+        height: 59vw;
+    }
+    .about .flexWrapper:first-child {
+        top:-1.8%;
+        }
+    .about .flexWrapper:last-child {
+        bottom:-1.8%;
+    }
+}
+@media (max-width:1366px) {
+    .headingWrapper {
+        margin-top: 3rem;
+    }
+    .headings .title {
+        font-size: 100px;
+    }
+    .newAdv .text {
+        width:52%;
+    }
+    .newAdv .image {
+        width:39%;
+    }
+    .about {
+        height: auto;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+    .about .flexWrapper {
+        position: static;
+        width:100%;
+        margin-bottom: 2rem;
+    }
+    .about .text {
+        width:40%;
+    }
+    .aboutText1 {
+        margin-top: 1%;
+    }
+    .aboutText2 p {
+        text-align: right;
+    }
+}
+@media (max-width:1290px) {
+    .newAdv .text {
+        width:47%;
+    }
+    .newAdv .image {
+        width:43%;
+    }
+}
+@media (max-width:1242px) {
+    .headingWrapper {
+        margin-top: 2rem;
+    }
+    .headings .title {
+        font-size: 95px;
+    }
+    .newAdv {
+        padding-top: 5rem;
+    }
+    .newAdv .text,
+    .newAdv .image {
+        width:48%;
+    }
+    .about p {
+        margin-bottom: 1rem;
+    }
+    .aboutImage {
+        width:49%;
+    }
+    .aILeft img {
+        box-shadow: 0.5rem 0.5rem $marigold;
+    }
+    .aIRight img {
+        box-shadow: -0.5rem 0.5rem $marigold;
+    }
+}
+@media (max-width:1180px) {
+    .headingWrapper {
+        margin-top: auto;
+        bottom:0;
+    }
+    .headings .title {
+        font-size: 80px;
+    }
+    .newAdv .flexWrapper {
+        flex-wrap: wrap;
+    }
+    .newAdv .text, 
+    .newAdv .image,
+    .aboutImage,
+    .about .text,
+    .userService .icon {
+        margin: 1rem auto;
+    }
+    .newAdv .text,
+    .aboutImage,
+    .about .text,
+    .userService .icon {
+        width:80%;
+    }
+    .newAdv .image {
+        width:60%;
+    }
+    .newAdv img,
+    .aILeft img,
+    .aIRight img{
+        box-shadow: none;
+    }
+    .newAdv .text,
+    .about .text {
+        text-align: center;
+    }
+    .newAdv .text {
+        order: 1;
+        padding-top: 1rem;
+        border-top: 2px solid $mudgreen;
+    }
+    .about {
+        max-height: initial;
+    }
+    .about p {
+        margin-bottom: 2rem;
+    }
+    .userService .flexWrapper {
+        flex-wrap: wrap;
+    }
+    .userService .iconCircle {
+        width: 95px;
+        height: 95px;
+        padding: 0.8rem 0.5rem;
+        font-size: 2.5rem;
+    }
+    .userService .text {
+        width: calc(100% - 95px - 2rem);
+    }
+    .about .flexWrapper {
+        flex-wrap: wrap;
+    }
+    .aboutImage,
+    .about .text {
+        padding-bottom: 2rem;
+        border-bottom: 2px solid $marigold;
+    }
+    .aboutText2 {
+        order:1;
+    }
+    .aboutText2 p {
+        text-align: center;
+    }
+}
+@media (max-width:1080px) {
+    .headingWrapper figure {
+        width:34%;
+        margin-left: 3rem;
+    }
+    .headings {
+        margin-top: 0.2rem;
+        padding-left: 1rem;
+    }
+    .plainTitle {
+        font-size: 30px;
+    }
+    .headings .title {
+        line-height: 3rem;
+    }
+}
+@media (max-width:990px) {
+    .homeHeader {
+        height: 450px;
+        background-position: 90% center;
+    }
+    .headings {
+        margin-top: -0.75rem;
+    }
+    .headings .title {
+        font-size: 67px;
+        line-height: 2.4rem;
+    }
+    .newAdv .text,
+    .aboutImage,
+    .about .text,
+    .userService .icon {
+        width:90%;
+    }
+    .gallery {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .gallery .flexWrapper {
+        flex-wrap: wrap;
+    }
+    .gallery .image {
+        width:60%;
+        margin: 1rem auto;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid $marigold;
+    }
+    .freeTrial .text {
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+        text-align: center;
+    }
+}
+@media (max-width:880px) {
+    .homeMiddleHidden {
+        visibility: hidden;
+    }
+    .headingWrapper {
+        flex-wrap: wrap;
+    }
+    .headingWrapper figure {
+        width:35%;
+        order:1;
+    }
+    .headings {
+        padding-left: 3rem;
+        width:80%;
+    }
+}
+@media (max-width:788px) {
+    .newAdv .image,
+    .newAdv .text,
+    .aboutImage,
+    .about .text,
+    .userService .icon {
+        width:100%;
+    }
+    .gallery .image {
+        width:55%;
+    }
+    .newAdv {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .userService .iconCircle:hover {
+        transform: scale(1.3) rotate(360deg);
+    }
+}
+@media (max-width:588px) {
+    .headingWrapper figure {
+        width:35.1%;
+        margin-left: 1rem;
+        opacity: 0.5;
+    }
+    .headings {
+        padding-left: 1rem;
+    }
+    .headings .title {
+        margin-bottom: 1.5rem;
+    }
+    .gallery .image {
+        width:100%;
+    }
+    .userService .text {
+        width:70%;
+    }
+}
+@media (max-width:503px) {
+    .headingWrapper figure {
+        visibility: hidden;
+    }
+}
+@media (max-width:455px) {
+    .plainTitle {
+        font-size: 25px;
+        letter-spacing: 0.1rem;
+    }
+    .headings .title {
+        margin-bottom: 3.5rem;
+        font-size: 55px;
+        line-height: 2rem;
+    }
+    .text p{
+        font-size: 0.9rem;
+        line-height: 1.35rem;
+        letter-spacing: 1.2px;
+    }
+    .userService .iconCircle {
+        width: 80px;
+        height: 80px;
+        padding: 0.6rem 0.5rem;
+        font-size: 2.1rem;
+    }
+    .userService .iconCircle:hover {
+        transform: rotate(360deg);
+    }
+    .userService .text {
+        width: calc(100% - 80px - 1rem);
+    }
+    .userService p {
+        line-height: 1.5rem;
+    }
+}
+@media (max-width:400px) {
+    .userService p {
+        margin-top: 2rem;
+        margin-left: -3rem;
+    }
+}
